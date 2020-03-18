@@ -15,9 +15,12 @@ http://upgrade-bootstrap.bootply.com/bootstrap-4-customizer und https://bootstra
 
 (bzw. https://github.com/bootstrap-build/bootstrap.build)
 
-Diese Version ist die erste Beta. Das Unterklappen eines  langen Navs im mittleren Modus beseitigt den Breiten - 'Bug', den Bootswatch.com leider ebenfalls hat. Man sollte daher andernfalls im CMS  keinen Seitentitel eintragen. 
+Diese Version ist die erste Beta. 
 
-P.S. Das Adminmenu wird leider verdeckt. Bitte im CMS unter assets/core.css den Wert xh_adminmenu_fixed { z-index: 999999;} setzen.
+Das Unterklappen eines langen Navs im mittleren Modus beseitigt den Breiten - 'Bug', den Bootswatch.com leider ebenfalls hat. 
+Man sollte daher andernfalls im CMS  keinen Seitentitel eintragen. 
+
+P.S. Das Adminmenu wird leider wie auch bei einigen anderen Templates verdeckt. Bitte im CMS unter assets/core.css den Wert xh_adminmenu_fixed { z-index: 999999;} setzen - habe ich hier jetzt auch in die Stylesheet eingetragen.
 
 Wünsche und Anregungen bitte unter Issues.
 
