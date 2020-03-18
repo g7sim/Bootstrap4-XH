@@ -15,5 +15,6 @@ http://upgrade-bootstrap.bootply.com/bootstrap-4-customizer und https://bootstra
 
 (bzw. https://github.com/bootstrap-build/bootstrap.build)
 
-Diese Version ist die erste Beta. Wünschen und Anregungen bitte unter Issues.
+Diese Version ist die erste Beta. Sie hat noch den 'Bug', daß die Breite des Seitentitels den Einsatz des schmalen Modus beeinflusst - hat Bootswatch.com leider ebenfalls. Man sollte daher im CMS  keinen Seitentitel eintragen. 
+Wünschen und Anregungen bitte unter Issues.
 
