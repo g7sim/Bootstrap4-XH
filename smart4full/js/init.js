@@ -1,6 +1,6 @@
 $("ul.menulevel1").addClass("nav navbar-nav mr-auto").css("width", "100%"); ;
 
-$("ul.menulevel1 > :first-child").addClass("nav-item"); 
+$("ul.menulevel1 > li:first-child").addClass("nav-item"); 
 
 $("ul.menulevel1 li a").addClass("nav-link").css("color", "#fff"); //a+ dropdown-item  Schriftfarbe - hier ändern
 
@@ -16,8 +16,17 @@ $("ul.menulevel7").addClass("dropdown-menu");
 $("ul.menulevel8").addClass("dropdown-menu"); 
 $("ul.menulevel9").addClass("dropdown-menu"); 
 
-$("li.sdoc").css("line-height", "20px").css("background-color", "inherit").css("text-align", "left").css("margin-left", "10px").css("max-width", "300px"); // aktive Seite ohne vorhandene Unterseiten 
-$("li.sdocs").css("line-height", "20px").css("background-color", "inherit").css("text-align", "left").css("margin-left", "10px").css("max-width", "300px"); //aktive Seite mit vorhandenen Unterseiten 
+/*	  
+$('#navigation li').click(function() {
+    $('#navigation li').addClass('selected');
+});  
+ */
+ 
+$('.nav li > span').each(function() {
+var $this = $(this);
+$this.replaceWith('<a class="navlink" href="#">' + $this.text() + '</a>');
+});
+
  	  
  (function() {
    			$('<i id="to-top"></i>').appendTo($('body'));
@@ -38,7 +47,3 @@ $("li.sdocs").css("line-height", "20px").css("background-color", "inherit").css(
    
 $("span[data-toggle=popover]").popover()
    
-
-
-
-
