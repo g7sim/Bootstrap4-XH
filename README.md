@@ -20,6 +20,6 @@ Man sollte daher andernfalls im CMS  keinen Seitentitel eintragen.
 
 P.S. Das Adminmenu wird leider wie auch bei einigen anderen Templates verdeckt. Bitte im CMS unter assets/core.css den Wert xh_adminmenu_fixed { z-index: 999999;} setzen - habe ich hier jetzt auch in die Stylesheet eingetragen.
 
-Diese Version ist die erste Beta - sie hat noch Probleme im eingeloggten Zustand !!! 
+Achtung : Diese Version ist die erste Beta - sie hat noch Probleme im eingeloggten Zustand !!! 
 Wünsche und Anregungen bitte unter Issues.
 
