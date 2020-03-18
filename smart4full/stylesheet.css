@@ -29,21 +29,28 @@ li.sdoc, li.sdocs{color:#343a40; background-color:white; line-height: 20px; text
                    max-width:500px;border-radius:2px:}
 
 li.sdoc {min-height:35px;padding:10px!important;}  /*aktuell ausgewähltes li */
+li.sdoc{line-height:20px;background-color:inherit;text-align:left;margin-left:10px;max-width:300px;} /* aktive Seite ohne vorhandene Unterseiten */
 
-li.docs > a:hover, li.docs > a:active  {background:#699af0 !important; box-shadow: none; line-height: 20px;} 
+li.sdocs{line-height:20px;background-color:#4582ec;color:white !important;text-align:left;margin-left:10px;max-width:300px;} /* aktive Seite mit vorhandenen Unterseiten */
 
 li.sdocs {margin-left:0 !important;}
+li.sdocs.nav-item.dropdown{margin-left:0 !important;color:white !important;}
+
+li.sdocs.nav-item.dropdown a:hover{	margin:0; margin-top:2px; margin-left:2px;color:white;text-decoration:none;}
+li.sdocs.nav-item.dropdown a:active{margin-top:2px;margin-left:2px;}
 
 ul.menulevel1 > li.docs > a, ul.menulevel1 > li.sdocs > a   {background:inherit !important; box-shadow: none;}
 
-a.nav-link { display: block;
+a.navlink.has-submenu{font-size:16px; color:white;}
+
+a.nav-link, a.navlink.has-submenu { display: block;
     width: 97%;
     padding: .30rem 1.5rem;
 	margin:2px;
     clear: both;
     font-weight: 400;
     color: inherit;
-    text-align: inherit;
+    text-align: left;
     white-space: nowrap;
     background-color: #699af0;
 border: 0;}
@@ -99,6 +106,7 @@ position: static;
 }
 
 h1,h2,h3{font-size:1.2rem;}
+
 div.collapse.navbar-collapse a {font-size:1rem;}  /* navbar fontsize */
 
 @media (max-width: 768px) {	
