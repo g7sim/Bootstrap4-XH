@@ -20,7 +20,7 @@ body {
 	width:100%;
 }
  /* https://www.w3schools.com/colors/colors_picker.asp */
-
+#xh_adminmenu_fixed { z-index: 999999 !important;}
 
 #navbarResponsive.collapse.navbar-collapse > li {max-height:40px !important;}
 .navbar-dark.bg-primary {  box-shadow: 0 1px 2px rgba(0,0,0,.3); }
