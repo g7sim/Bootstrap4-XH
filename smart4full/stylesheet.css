@@ -25,19 +25,18 @@ body {
 #navbarResponsive.collapse.navbar-collapse > li {max-height:40px !important;}
 .navbar-dark.bg-primary {  box-shadow: 0 1px 2px rgba(0,0,0,.3); }
 
-li.sdoc, li.sdocs{color:#343a40; background-color:white; line-height: 20px; text-align:left;
-                   max-width:500px;border-radius:2px:}
+li.sdoc, li.sdocs{color:#343a40;  text-align:left; max-width:500px;border-radius:2px:}
 
-li.sdoc {min-height:35px;padding:10px!important;}  /*aktuell ausgewähltes li */
-li.sdoc{line-height:20px;background-color:inherit;text-align:left;margin-left:10px;max-width:300px;} /* aktive Seite ohne vorhandene Unterseiten */
+li.sdoc {height:30px; padding:5px !important; line-height:20px;background-color:#c7d8f2;
+         margin-left:2px; margin-right:2px; max-width:300px;} /* aktive Seite ohne vorhandene Unterseiten */
 
-li.sdocs{line-height:20px;background-color:#4582ec;color:white !important;text-align:left;margin-left:10px;max-width:300px;} /* aktive Seite mit vorhandenen Unterseiten */
+li.sdocs{line-height:20px;background-color:#4582ec;color:white !important;text-align:left;max-width:300px;} /* aktive Seite mit vorhandenen Unterseiten */
 
-li.sdocs {margin-left:0 !important;}
+li.sdocs {margin-left:2px; margin-right:2px;line-height: 20px;}
 li.sdocs.nav-item.dropdown{margin-left:0 !important;color:white !important;}
 
-li.sdocs.nav-item.dropdown a:hover{	margin:0; margin-top:2px; margin-left:2px;color:white;text-decoration:none;}
-li.sdocs.nav-item.dropdown a:active{margin:2px;} /* 20px - 16px : 2 */
+li.sdocs.nav-item.dropdown a:hover{	margin:2px;color:white;text-decoration:none;} /* secondary: #adb5bd; lightgray*/
+li.sdocs.nav-item.dropdown a:active{margin-top:2px;margin-left:2px; color:#868e96;}   /*  #adb5bd; --gray*/
 
 ul.menulevel1 > li.docs > a, ul.menulevel1 > li.sdocs > a   {background:inherit !important; box-shadow: none;}
 
@@ -55,27 +54,23 @@ a.nav-link, a.navlink.has-submenu { display: block;
     background-color: #699af0;
 border: 0;}
 	
-	
-/*	background-color:#d5e2f8;margin:3px;font-size:1rem;max-height:35px !important;
-   margin:auto;margin-top:2px;margin-left:2px;margin-right:2px;}	*/  
 
-/*color manually adjust ! ----aktuell : <span>bt4-a</span> */
-	  
-.main-content {width:99%;margin-left:6px;margin-top:auto; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+  
+.main-content {width:99%;margin-left:6px;margin-top:auto; 
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
 
 .content {min-height:600px !important; border:1px solid inherit; 
 margin-left:10px;margin-right:10px;margin-top:1px;width:100%;
 }
 
 .container, .container-sm, .container-md, .container-lg{
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: 25px;
-  margin-left: auto;
-  margin-top: 15px;  
- 
-}
+ width: 100%;
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-right: 25px;
+ margin-left: auto;
+ margin-top: 15px;   
+ }
 
 .container-fluid {
   width: 99%;
@@ -87,22 +82,22 @@ margin-left:10px;margin-right:10px;margin-top:1px;width:100%;
 
 .row {
   display: flex;
-   display: webkit-flex;
+  display: webkit-flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
 
 .footer{padding:20px; 
-min-height:100px; 
-width:105%;	
-border:1px gray dotted;
-position: static;
-   margin:auto;
-  padding: 1rem;
-  background-color: #3d80f4;
-  text-align: center;
-  box-shadow: 0 1px 2px rgba(0,0,0,.3); }
+ min-height:100px; 
+ width:105%;	
+ border:1px gray dotted;
+ position: static;
+ margin:auto;
+ padding: 1rem;
+ background-color: #3d80f4;
+ text-align: center;
+ box-shadow: 0 1px 2px rgba(0,0,0,.3); }
 }
 
 h1,h2,h3{font-size:1.2rem;}
@@ -115,11 +110,15 @@ div.collapse.navbar-collapse a {font-size:1rem;}  /* navbar fontsize */
 	
 div.navbar{max-width:600px !important;}
 
-li.doc, li.docs {padding-left: 5px !important;}
+li.doc, li.docs {padding-left: 3px !important;margin-right:2px;}
+li.sdoc {margin-left:5px; margin-right:5px;}
 
 .main-content {width:98%;margin-top:5px;}
 }
 
+@media (max-width: 350px) {	
+li.doc, li.docs {padding-left:1px !important; margin-right:0;}
+}
 
 /*  Back-to-top */
 #to-top {
