@@ -37,7 +37,7 @@ li.sdocs {margin-left:0 !important;}
 li.sdocs.nav-item.dropdown{margin-left:0 !important;color:white !important;}
 
 li.sdocs.nav-item.dropdown a:hover{	margin:0; margin-top:2px; margin-left:2px;color:white;text-decoration:none;}
-li.sdocs.nav-item.dropdown a:active{margin-top:2px;margin-left:2px;}
+li.sdocs.nav-item.dropdown a:active{margin:2px;} /* 20px - 16px : 2 */
 
 ul.menulevel1 > li.docs > a, ul.menulevel1 > li.sdocs > a   {background:inherit !important; box-shadow: none;}
 
