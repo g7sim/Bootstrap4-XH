@@ -30,10 +30,10 @@ if (function_exists('fa_require')) {
       <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">   <!-- primary #4582EC bei litera -->
 	  
         <div class="container">
-          <a href="/" class="navbar-brand" title="Cmsimple XH ">Cmsimple XH </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+		<a class="navbar-brand" href="."> <span><?php echo utf8_substr(sitename(),0);?></span></a> 
 
           <div class="collapse navbar-collapse sm-collapsible navbar-right" id="navbarResponsive">
                      <?php echo li($hc,1);?>
