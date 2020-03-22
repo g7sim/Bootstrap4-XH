@@ -22,6 +22,6 @@ P.S. Das Adminmenu wird leider wie auch bei einigen anderen Templates verdeckt. 
 
 * Wem die Navigation zu hoch ist : Eine Änderung in Zeile 32 der template.htm von container in container-fluid reduziert die Höhe beispielsweise (< header class="main-header" >)
 
-Achtung : Diese Version ist die erste Beta - sie hat noch Probleme im eingeloggten Zustand bei der cleanen Version!!! 
+Achtung : Diese Version ist die erste Beta - sie hat noch Probleme bei der cleanen Version u.a in a.active in menulevel 1 !!! 
 Wünsche und Anregungen bitte unter Issues.
 
