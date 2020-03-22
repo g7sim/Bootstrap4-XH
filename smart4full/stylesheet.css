@@ -116,6 +116,15 @@ li.sdoc {margin-left:5px; margin-right:5px;}
 .main-content {width:98%;margin-top:5px;}
 }
 
+@media (min-width: 768px) and (max-width:1000px){
+  .content {margin-top:50px;
+  }
+}
+@media (min-width: 350px) and (max-width: 780px){
+  .content {margin-top:20px;
+  }
+}
+
 @media (max-width: 350px) {	
 li.doc, li.docs {padding-left:1px !important; margin-right:0;}
 }
