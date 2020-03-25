@@ -18,24 +18,23 @@ if (function_exists('fa_require')) {
   <?php echo head();?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?php echo $pth['folder']['template']?>img/favicon.png">
-	<!-- https://unsplash.com/t/textures-patterns -->
-<!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'> -->
-<!-- <link rel='stylesheet' href='https://vadikom.github.io/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.css'> -->
+	<!-- https://unsplash.com/ free pictures -->
 
 </head>
 <body id="body" <?php echo onload();?>>
+    
 <div class="wrap">
  
    <header class="main-header">
-      <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">   <!-- primary #4582EC bei litera -->
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-primary">   <!-- primary #4582EC bei litera -->
 	  
-        <div class="container">
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid"> <!-- container-fluid -->
+        <a class="navbar-brand" href="."> <span><?php echo utf8_substr(sitename(),0);?></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-		<a class="navbar-brand" href="."> <span><?php echo utf8_substr(sitename(),0);?></span></a> 
+            </button>   
 
-          <div class="collapse navbar-collapse sm-collapsible navbar-right" id="navbarResponsive">
+          <div class="collapse navbar-collapse navbar-right" id="navbarResponsive">
                      <?php echo li($hc,1);?>
           </div><!--/.nav-collapse -->
         </div><!-- conbtainer -->
@@ -47,7 +46,7 @@ if (function_exists('fa_require')) {
 <!--container start-->
  ´<div class="main-content">
       <div class="container-fluid content">
-	     <!-- https://getbootstrap.com/docs/3.3/examples/grid/ -->	   
+	     	   
 		<?php echo content();?>
 	  </div>  <!--container end-->
   </div>	
@@ -73,20 +72,16 @@ if (function_exists('fa_require')) {
 	  
 </div>
 <!-- Bootstrap core JavaScript -->
-<!-- Placed at the end of the document so the pages load faster -->
   
-<!--<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>-->
 <script src="<?php echo $pth['folder']['template']?>js/bootstrap.min.js">    </script>
 
-<!--<script src='https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js'></script>-->
 <script src="<?php echo $pth['folder']['template']?>js/jquery.smartmenus.js"></script> 
 
-<!--<script src='https://vadikom.github.io/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.js'></script>-->
 <script src="<?php echo $pth['folder']['template']?>js/jquery.smartmenus.bootstrap-4.js">    </script>
 
 <script src="<?php echo $pth['folder']['template']?>js/popper.min1.16.1.js"> </script>
 
-  <!-- js placed at the end of the document so the pages load faster -->
-    <script src="<?php echo $pth['folder']['template']?>js/init.js">    </script>
+<script src="<?php echo $pth['folder']['template']?>js/init.js">    </script>
+
 </body>
 </html>
