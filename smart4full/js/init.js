@@ -16,15 +16,10 @@ $("ul.menulevel7").addClass("dropdown-menu");
 $("ul.menulevel8").addClass("dropdown-menu"); 
 $("ul.menulevel9").addClass("dropdown-menu"); 
 
-/*	  
-$('#navigation li').click(function() {
-    $('#navigation li').addClass('selected');
-});  
- */
  
 $('.nav li > span').each(function() {
 var $this = $(this);
-$this.replaceWith('<a class="navlink" href="#">' + $this.text() + '</a>');
+$this.replaceWith('<a class="navlink dropdown-toggle xhspan" href="#">' + $this.text() + '</a>');
 });
 
  	  
@@ -45,5 +40,10 @@ $this.replaceWith('<a class="navlink" href="#">' + $this.text() + '</a>');
 
 	})();					  
    
-$("span[data-toggle=popover]").popover()
+
    
+
+
+
+
+
