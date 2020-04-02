@@ -18,7 +18,9 @@ if (function_exists('fa_require')) {
   <?php echo head();?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?php echo $pth['folder']['template']?>img/favicon.png">
-	<!-- https://unsplash.com/ free pictures -->
+	<!-- https://unsplash.com/t/textures-patterns -->
+<!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'> -->
+<!-- <link rel='stylesheet' href='https://vadikom.github.io/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.css'> -->
 
 </head>
 <body id="body" <?php echo onload();?>>
@@ -26,7 +28,7 @@ if (function_exists('fa_require')) {
 <div class="wrap">
  
    <header class="main-header">
-      <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-primary">   <!-- primary #4582EC bei litera -->
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-primary justify-content-between">   <!--  primary #4582EC bei litera -->
 	  
         <div class="container-fluid"> <!-- container-fluid -->
         <a class="navbar-brand" href="."> <span><?php echo utf8_substr(sitename(),0);?></span></a>
@@ -41,47 +43,43 @@ if (function_exists('fa_require')) {
       </nav>
   </header>
   
-<br clear=all><hr size=1>
+<br>
 
 <!--container start-->
- ´<div class="main-content">
-      <div class="container-fluid content">
-	     	   
+ ´<div class="main-content row clearfix">
+          <div class="container-fluid content col-md-12">
+	     <!-- https://getbootstrap.com/docs/3.3/examples/grid/ -->	   
 		<?php echo content();?>
-	  </div>  <!--container end-->
-  </div>	
+	  </div>  
+  </div> <!--container end-->	
   
   
-	 <div id="footer" class="container-fluid footer">
-	   <div class="row"> 
-	      <div class="col-sm-3"> 
-	      <p>  Email - <?php echo mailformlink();?>
-		  </p> </div>
-		  <div class="col-sm-3"> 		  
-	   	  <p> <?php echo sitemaplink();?>  
-		  </p> </div>
-		  <div class="col-sm-3"> 
-          <p>  <?php echo printlink();?>  
-		  </p> </div>
-		  <div class="col-sm-3"> 
-		  <p>  <?php echo loginlink();?>  
-		  </p>	 </div>		 
-	    </div>
-	 </div>
+  <div id="footer" class="container-fluid footer"><p>
+        <div class="row"> 
+	    <div class="col-sm-3">  Email - <?php echo mailformlink();?>  </div>
+            <div class="col-sm-3">   Sitemap :<?php echo sitemaplink();?>   </div>
+            <div class="col-sm-3"> Druck :  <?php echo printlink();?>   </div>
+	    <div class="col-sm-3"> <?php echo loginlink();?>  	  </div>		 
+	 </div> </p>
+    </div> <!-- footer end-->
 	   
 	  
 </div>
 <!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
   
+<!--<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>-->
 <script src="<?php echo $pth['folder']['template']?>js/bootstrap.min.js">    </script>
 
+<!--<script src='https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js'></script>-->
 <script src="<?php echo $pth['folder']['template']?>js/jquery.smartmenus.js"></script> 
 
+<!--<script src='https://vadikom.github.io/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.js'></script>-->
 <script src="<?php echo $pth['folder']['template']?>js/jquery.smartmenus.bootstrap-4.js">    </script>
 
 <script src="<?php echo $pth['folder']['template']?>js/popper.min1.16.1.js"> </script>
 
-<script src="<?php echo $pth['folder']['template']?>js/init.js">    </script>
-
+  <!-- js placed at the end of the document so the pages load faster -->
+    <script src="<?php echo $pth['folder']['template']?>js/init.js">    </script>
 </body>
 </html>
