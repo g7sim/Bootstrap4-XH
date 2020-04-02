@@ -5,9 +5,10 @@ Sie basiert auf Smartmenus - Bootstrap (https://github.com/vadikom/smartmenus-bo
 
 Das spezielle blaue bootstrap.min.litera.css ist von https://github.com/thomaspark/bootswatch herunterladbar. 
 
-Die dortigen herunterladbaren Templates laufen mit diesem Template durch einfachen Austausch der bootstrap.min.css. 
-
+Die dortigen farbigen Templates laufen mit diesem Template durch einfachen Austausch der bootstrap.min.css. 
 Evtl. sind Schriftfarben und Farben der Dropdowns per init.js und stylesheet.css anzupassen.
+
+Demo auf http://ulclean.mb-info.eu/Templates/Bootstrap4
 
 Für eigene Varianten eignen sich beispielsweise
 
