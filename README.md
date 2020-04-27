@@ -8,7 +8,7 @@ Das spezielle blaue bootstrap.min.litera.css ist von https://github.com/thomaspa
 Die dortigen farbigen Templates laufen mit diesem Template durch einfachen Austausch der bootstrap.min.css. 
 Evtl. sind Schriftfarben und Farben der Dropdowns per init.js und stylesheet.css anzupassen.
 
-Demo auf http://ulclean.mb-info.eu/Templates/Bootstrap4
+Demo auf http://ulclean.mb-info.eu/Bootstrap4-x/Bootstrap4
 
 Für eigene Varianten eignen sich beispielsweise
 
