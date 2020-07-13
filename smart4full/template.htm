@@ -1,3 +1,16 @@
+<?php
+// if jQuery4CMSimple is installed, include it
+if (is_readable($pth['folder']['plugins'].'jquery/jquery.inc.php')) {
+    include_once $pth['folder']['plugins'].'jquery/jquery.inc.php';
+    include_jQuery();
+}
+// Plugin FA_XH needed
+if (function_exists('fa_require')) {
+    fa_require();
+} else {
+    die('Das Template benötigt das Fa_XH-Plugin.');
+}
+?>
 
 <!DOCTYPE html>
 <html lang="<?php echo $sl;?>">
@@ -11,51 +24,44 @@
 
 </head>
 <body id="body" <?php echo onload();?>>
+    
 <div class="wrap">
  
    <header class="main-header">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">   <!-- primary #4582EC bei litera -->
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-primary justify-content-between">   <!--  primary #4582EC bei litera -->
 	  
-        <div class="container">
-          <a href="/" class="navbar-brand" title="Typesetter 5 ">Typesetter 5 </a>
+        <div class="container-fluid"> <!-- container-fluid -->
+        <a class="navbar-brand" href="."> <span><?php echo utf8_substr(sitename(),0);?></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+            </button>   
 
-          <div class="collapse navbar-collapse sm-collapsible navbar-right" id="navbarResponsive">
+          <div class="collapse navbar-collapse navbar-right" id="navbarResponsive">
                      <?php echo li($hc,1);?>
           </div><!--/.nav-collapse -->
         </div><!-- conbtainer -->
       </nav>
   </header>
   
-<br clear=all><hr size=1>
+<br>
 
 <!--container start-->
- ´<div class="main-content">
-      <div class="container-fluid content">
+ ´<div class="main-content row clearfix">
+          <div class="container-fluid content col-md-12">
 	     <!-- https://getbootstrap.com/docs/3.3/examples/grid/ -->	   
 		<?php echo content();?>
-	  </div>  <!--container end-->
-  </div>	
+	  </div>  
+  </div> <!--container end-->	
   
   
-	 <div id="footer" class="container-fluid footer">
-	   <div class="row"> 
-	      <div class="col-sm-3"> 
-	      <p>  Email - <?php echo mailformlink();?>
-		  </p> </div>
-		  <div class="col-sm-3"> 		  
-	   	  <p> <?php echo sitemaplink();?>  
-		  </p> </div>
-		  <div class="col-sm-3"> 
-          <p>  <?php echo printlink();?>  
-		  </p> </div>
-		  <div class="col-sm-3"> 
-		  <p>  <?php echo loginlink();?>  
-		  </p>	 </div>		 
-	    </div>
-	 </div>
+  <div id="footer" class="container-fluid footer"><p>
+        <div class="row"> 
+	    <div class="col-sm-3">  Email - <?php echo mailformlink();?>  </div>
+            <div class="col-sm-3">   Sitemap :<?php echo sitemaplink();?>   </div>
+            <div class="col-sm-3"> Druck :  <?php echo printlink();?>   </div>
+	    <div class="col-sm-3"> <?php echo loginlink();?>  	  </div>		 
+	 </div> </p>
+    </div> <!-- footer end-->
 	   
 	  
 </div>
