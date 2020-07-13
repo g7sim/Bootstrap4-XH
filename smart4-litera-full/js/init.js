@@ -1,9 +1,8 @@
-$("ul.menulevel1").addClass("nav navbar-nav mr-auto").css("width", "100%"); ;
+$("ul.menulevel1").addClass("nav navbar-nav mr-auto");
 
 $("ul.menulevel1 > li:first-child").addClass("nav-item"); 
 
-$("ul.menulevel1 li a").addClass("nav-link").css("color", "#fff"); //a+ dropdown-item  Schriftfarbe - hier ändern
-
+$("ul.menulevel1 li a").addClass("nav-link"); //a+ dropdown-item  
 $("li.docs").addClass("nav-item dropdown");  // docs Seite mit vorhandenen Unterseiten
 $("li.sdocs").addClass("nav-item dropdown");  // sdocs - eine aktive Seite mit vorhandenen Unterseiten
 
