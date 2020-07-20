@@ -35,26 +35,28 @@ h1,h2,h3{font-size:1.2rem;}
             background-color: #4582EC !important;}
  
 /* https://www.w3schools.com/colors/colors_picker.asp */
-.navbar-light .navbar-nav .nav-link {color:white;}
+.navbar-light .navbar-nav .nav-link {color:#333;} 
 
 nav.navbar{max-height:60px;margin-top:-10px;}  /* height and shift of navbar */
-
-/* #navbarResponsive.collapse.navbar-collapse > li {max-height:40px !important;} */
 
 div.collapse.navbar-collapse a {font-size:1rem;}  /* navbar fontsize */	
 
 .menulevel2 > li.doc > a{line-height:18px;max-height:40px;} /* height of li-drop */
 
+a.nav-link{background:inherit;color:#81b1f3;margin:1px;}
+
+/*.menulevel1 > li > a.nav-link{background:inherit;color:#333;} */
+a.nav-link:hover{background:#b8d0f8;}
+
+li.sdocs{line-height:20px;background:inherit;color:white !important;} 
+/* aktive Seite mit vorhandenen Unterseiten */
+
 li.sdoc > span, li.sdocs > span {display: block;position: relative;
 padding: 3px 10px; color:#1164b4; font-size:15px;
 }
 
-a.nav-link{background:#81b1f3;color:#333;margin:1px;}
-.menulevel1 > li > a.nav-link{background:inherit;color:#333;}
-a.nav-link:hover{background:#b8d0f8;}
-
-li.sdocs{line-height:20px;background:#4582ec;color:white !important;} 
-/* aktive Seite mit vorhandenen Unterseiten 
+a.xhspan{line-height:18px;display: inline-flex;background:#b8d0f8;
+         padding:10px;width:99%;color:gray; font-size:16px;}
 
 /* ------------------ contentstyles ---------------------------------------- */
 
@@ -108,7 +110,7 @@ button.navbar-toggler{max-height:40px;}
           a.navbar-brand	{margin-bottom:15px;border: 2px transparent dotted;}			  
    div#navbarResponsive.navbar-collapse {margin:3px;background:white;}	
 	
- .main-content {margin-top:12px !important; border:1px red dotted; }
+ .main-content {margin-top:12px !important; border:1px transparent dotted; } /* test */
     .container-fluid {margin-top:1px !important;  }
 }
   
